@@ -1,13 +1,13 @@
-const todoItemFactory = (title, description, dueDate, priority, project) => {
-  const todoDetails = {
-    title: title,
-    description: description,
-    dueDate: dueDate,
-    priority: priority,
-    project: project,
-  };
+const todoItemFactory = (initialDetails) => {
+  let todoDetails = initialDetails;
 
-  const addToList = (todoDetails, project) => {};
-  return { addToList };
+  return {
+    get details() {
+      return todoDetails;
+    },
+    set details(value) {
+      todoDetails = value;
+    },
+  };
 };
 export default todoItemFactory;
