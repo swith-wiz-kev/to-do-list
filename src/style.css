@@ -127,3 +127,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.maincontainer {
+  background-color: black;
+  color: white;
+  min-width: 100vw;
+  min-height: 100vh;
+}
