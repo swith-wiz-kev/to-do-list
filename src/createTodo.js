@@ -1,8 +1,8 @@
 import todoItemFactory from "./todoItem";
-
+import { addTodo } from "./masterList";
 function createTodo(details) {
   const newTodo = todoItemFactory(details);
-  masterList.addTodo(newTodo);
+  addTodo(newTodo);
 }
 
 export default createTodo;
