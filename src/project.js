@@ -27,10 +27,6 @@ const projectFactory = (initialDetails) => {
     Object.assign(todoItem, deleteFromProject);
   };
 
-  const deleteFromArray = (array) => {
-    array.splice(array.indexOf(this), 1);
-  };
-
   return {
     get details() {
       return projectDetails;
@@ -41,7 +37,6 @@ const projectFactory = (initialDetails) => {
     addToProjectList,
     addTask,
     showTasks,
-    deleteFromArray,
   };
 };
 export default projectFactory;

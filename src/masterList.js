@@ -11,7 +11,6 @@ function deleteFromMasterListTodoItems() {
 function addTodo(todoItem) {
   todoItems.push(todoItem);
   Object.assign(todoItem, { deleteFromMasterListTodoItems });
-  console.log(todoItem);
 }
 
 function addProject(project) {
@@ -19,18 +18,16 @@ function addProject(project) {
   Object.assign(project, { deleteFromMasterListProjects });
 }
 
-/* function debug() {
-  console.log("items \n", todoItems[0]);
-  console.log("projects \n", projects[0]);
+function debug() {
+  // console.log("items \n", todoItems[0]);
+  // console.log("projects \n", projects[0]);
+  return todoItems;
 }
 
 function debug2() {
-  todoItems[0].deleteFromMasterListTodoItems();
-  projects[0].deleteFromMasterListProjects();
-} */
+  // todoItems[0].deleteFromMasterListTodoItems();
+  // projects[0].deleteFromMasterListProjects();
+  return projects;
+}
 
-export {
-  addTodo,
-  addProject,
-  // debug, debug2
-};
+export { addTodo, addProject, debug, debug2 };
